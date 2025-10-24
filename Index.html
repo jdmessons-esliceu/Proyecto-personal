@@ -3,18 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Proyecto personal</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/sytles.css">
 </head>
 <body>
     <header>
         <h1>Web personal</h1>
     </header>
-    <nav>
-        <p>navegación</p>
-    </nav>
-    <section>
-        <h2>Explora el universo</h2>
-        <p>Aprende desde casa</p>
+    <div class="bg-secundario">
+        <nav class="navegacion-principal contenedor">
+            <a href="Index.html">Home</a>
+            <a href="Planetas.html">Planetas</a>
+            <a href="Constelaciones.html">Constelaciones</a>
+            <a href="Galaxias.html">Galaxias</a>
+        </nav>
+    </div>
+    <section class="galaxy">
+        <div class="contenidor-galaxy">
+            <h2>Explora el universo</h2>
+            <p>Aprende desde casa</p>
+        </div>
     </section>
     <main>
         <h2>Contenido</h2>
@@ -78,7 +90,30 @@
         </section>
         <section>
             <h2>Contacto</h2>
-            <p>formulario</p>
+            <form action="">
+                <fieldset>
+                    <legend>Contáctame enviando tus datos</legend>
+                    <div>
+                        <label for="">Nombre: </label>
+                        <input type="text" name="nombre">
+                    </div>
+                    <div>
+                        <label for="">Teléfono: </label>
+                        <input type="tel" name="telefono">
+                    </div>
+                    <div>
+                        <label for="">Correo: </label>
+                        <input type="email" name="correo">
+                    </div>
+                    <div>
+                        <label for="">Mensaje: </label>
+                        <textarea name="mensaje" cols="30" rows="10"></textarea>
+                    </div>
+                    <div>
+                        <input type="submit" value="Enviar">
+                </div>
+                </fieldset>
+            </form>
         </section>
     </main>
     <footer>

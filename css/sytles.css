@@ -1,0 +1,77 @@
+:root{
+    --color-fondo: #0b0c2a;
+    --color-secundario: #1f1b3a;
+    --color-texto: #c3cce0;
+    --color-h3: #98a3b8;
+    --color-principal: #f5f5f5;;
+    --color-hover: #3b82f6;
+    --color-hover2: #214886;
+}
+
+html{
+    font-size: 100%;
+}
+
+body{
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    font-family: 'Poppins', sans-serif;
+}
+
+h1{
+    font-size: 3rem;
+    color: var(--color-principal);
+    text-align: center;
+}
+
+h2{
+    font-size: 1.5rem;
+    color: var(--color-principal);
+}
+
+h3{
+    font-size: 1.2rem;
+    color: var(--color-h3);
+}
+
+p{
+    font-size: 1rem;
+    color: var(--color-texto);
+}
+
+.navegacion-principal{
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--color-secundario);
+}
+
+@media (min-width: 768px) {
+    .navegacion-principal{
+        flex-direction: row;
+    }
+}
+
+.navegacion-principal a{
+    text-align: center;
+    color: var(--color-principal);
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+.navegacion-principal a:hover{
+    color: var(--color-hover);
+    background-color: var(--color-hover2);
+}
+
+.galaxy{
+    background-image: url(../images/Galaxy.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45rem;
+}
+
+.contenidor-galaxy{
+    color: var(--color-principal)
+}
