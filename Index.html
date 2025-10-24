@@ -23,16 +23,20 @@
         </nav>
     </div>
     <section class="galaxy">
-        <div class="contenidor-galaxy">
+        <div class="contenido-galaxy">
             <h2>Explora el universo</h2>
+            <div class="informacion">
             <p>Aprende desde casa</p>
+            </div>
         </div>
+        <a class="boton" href="Galeria.html">Galeria</a>
     </section>
-    <main>
+    <main class="contenedor">
         <h2>Contenido</h2>
-        <section>
-            <h3>Planetas</h3>
-                <svg
+        <div class="micontenido">
+            <section class="contenido">
+            <h3 class="seccion">Planetas</h3>
+                <svg class="icono"
                     xmlns="http://www.w3.org/2000/svg"
                     width="40"
                     height="40"
@@ -48,9 +52,9 @@
                 </svg>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, numquam?</p>
         </section>
-        <section>
-            <h3>Constelaciones</h3>
-                <svg
+        <section class="contenido">
+            <h3 class="seccion">Constelaciones</h3>
+                <svg class="icono"
                     xmlns="http://www.w3.org/2000/svg"
                     width="40"
                     height="40"
@@ -67,9 +71,9 @@
                 </svg>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, inventore.</p>
         </section>
-        <section>
-            <h3>Galaxias</h3>
-                <svg
+        <section class="contenido">
+            <h3 class="seccion">Galaxias</h3>
+                <svg class="icono"
                     xmlns="http://www.w3.org/2000/svg"
                     width="40"
                     height="40"
@@ -88,30 +92,41 @@
                 </svg>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, doloribus!</p>
         </section>
+        </div>
         <section>
             <h2>Contacto</h2>
-            <form action="">
+            <form class="formulario" action="">
                 <fieldset>
                     <legend>Contáctame enviando tus datos</legend>
-                    <div>
-                        <label for="">Nombre: </label>
-                        <input type="text" name="nombre">
+                    <div class="contenedor-campos">
+                        <div class="campo">
+                            <div>
+                                <label for="">Nombre: </label>
+                                <input class="input-text" type="text" name="nombre">
+                            </div>
+                        </div>
+                        <div class="campo">
+                            <div>
+                                <label for="">Teléfono: </label>
+                                <input class="input-text" type="tel" name="telefono">
+                            </div>
+                        </div>
+                        <div class="campo">
+                            <div>
+                                <label for="">Correo: </label>
+                                <input class="input-text" type="email" name="correo">
+                            </div>
+                        </div>
+                        <div class="campo">
+                            <div>
+                                <label for="">Mensaje: </label>
+                                <textarea class="input-text" name="mensaje" cols="30" rows="10"></textarea>
+                            </div>
+                        </div>
+                        <div>
+                            <input class="boton" type="submit" value="Enviar">
+                        </div>
                     </div>
-                    <div>
-                        <label for="">Teléfono: </label>
-                        <input type="tel" name="telefono">
-                    </div>
-                    <div>
-                        <label for="">Correo: </label>
-                        <input type="email" name="correo">
-                    </div>
-                    <div>
-                        <label for="">Mensaje: </label>
-                        <textarea name="mensaje" cols="30" rows="10"></textarea>
-                    </div>
-                    <div>
-                        <input type="submit" value="Enviar">
-                </div>
                 </fieldset>
             </form>
         </section>

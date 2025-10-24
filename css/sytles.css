@@ -34,15 +34,28 @@ h3{
     color: var(--color-h3);
 }
 
+h1, h2, h3{
+    text-align: center;
+}
+
 p{
     font-size: 1rem;
     color: var(--color-texto);
+}
+
+fieldset{
+    border: none;
+}
+
+.seccion{
+    text-align: center;
 }
 
 .navegacion-principal{
     display: flex;
     justify-content: space-around;
     background-color: var(--color-secundario);
+    flex-direction: column;
 }
 
 @media (min-width: 768px) {
@@ -69,9 +82,114 @@ p{
     background-image: url(../images/Galaxy.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 45rem;
+    height: 40rem;
+    position: relative;
 }
 
-.contenidor-galaxy{
-    color: var(--color-principal)
+.contenido-galaxy{
+    color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.informacion{
+    display: flex;
+    justify-content: center;
+}
+
+.boton{
+    background-color: var(--color-secundario);
+    color: var(--color-principal);
+    padding: 1rem 3rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: .5rem;
+    width: 90%;
+    text-align: center;
+}
+
+@media (min-width: 480px){
+    .boton{
+        width: auto;
+    }
+}
+
+.micontenido{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+@media (min-width: 768px){
+    .micontenido{
+        flex-direction: row;
+    }
+}
+
+.contenido h3{
+    font-weight: normal;
+    color: var(--color-h3);
+}
+
+.contenido p{
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.icono{
+    height: 7rem;
+    width: 7rem;
+    background-color: var(--color-h3);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.formulario{
+    background-color: var(--color-h3);
+    width: min(60rem,100%);
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 2rem;
+}
+
+.formulario legend{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: #0b0c2a;
+}
+
+.campo{
+    margin-bottom: 1rem;
+}
+
+.campo label{
+    color: var(--color-fondo);
+    font-weight: bold;
+    display: block;
+    margin-bottom: .5rem;
+}
+
+.input-text{
+    width: 100%;
+    border: none;
+    padding: 1rem;
+    border-radius: .5rem;
 }
