@@ -1,0 +1,109 @@
+:root{
+    --color-fondo: #0b0c2a;
+    --color-secundario: #1f1b3a;
+    --color-texto: #c3cce0;
+    --color-h3: #98a3b8;
+    --color-principal: #f5f5f5;;
+    --color-hover: #3b82f6;
+    --color-hover2: #214886;
+}
+
+.navegacion-principal{
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--color-secundario);
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    .navegacion-principal{
+        flex-direction: row;
+    }
+}
+
+.navegacion-principal a{
+    text-align: center;
+    color: var(--color-principal);
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 1.5rem;
+}
+
+.navegacion-principal a:hover{
+    color: var(--color-hover);
+    background-color: var(--color-hover2);
+}
+
+html{
+    font-size: 100%;
+}
+
+body{
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-size: 3rem;
+    color: var(--color-principal);
+    text-align: center;
+}
+
+h2{
+    font-size: 1.5rem;
+    color: var(--color-principal);
+}
+
+h3{
+    font-size: 1.2rem;
+    color: var(--color-h3);
+}
+
+h1, h2, h3{
+    text-align: center;
+}
+
+p{
+    font-size: 1rem;
+    color: var(--color-texto);
+}
+
+.planetas section{
+    background: var(--color-secundario);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.planetas img{
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+}
+
+/*2 columas*/
+.planetas{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Tablet: 3 columnas */
+@media (min-width: 768px){
+    .planetas{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+/* Ordenador grande: 4 columnas */
+@media (min-width: 1440px){
+    .planetas{
+        grid-template-columns: repeat(4,1fr);
+    }
+}

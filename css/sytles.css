@@ -182,7 +182,7 @@ fieldset{
 
 .formulario{
     background-color: var(--color-h3);
-    width: min(60rem,100%);
+    width: min(60rem,90%);
     margin: 2rem auto;
     padding: 2rem;
     border-radius: 2rem;
