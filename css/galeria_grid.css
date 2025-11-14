@@ -10,6 +10,33 @@
     --maxw: 1400px;
 }
 
+.navegacion-principal{
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--color-secundario);
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    .navegacion-principal{
+        flex-direction: row;
+    }
+}
+
+.navegacion-principal a{
+    text-align: center;
+    color: var(--color-principal);
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 1.5rem;
+}
+
+.navegacion-principal a:hover{
+    color: var(--color-hover);
+    background-color: var(--color-hover2);
+}
+
 html{
     font-size: 100%;
 }
@@ -77,5 +104,12 @@ p{
 @media (min-width: 1024px){
     #galeria{
         grid-template-columns: repeat(3,1fr);
+    }
+}
+
+/*4 columnas*/
+@media (min-width: 1440px){
+    #galeria{
+        grid-template-columns: repeat(4,1fr);
     }
 }
